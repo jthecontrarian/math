@@ -1,0 +1,10 @@
+1) Add confidence interval for accuracy of input distribution provided to the model
+2) another script should consider the monte carlo to statistically consider what is right. 
+    note that we will need to fix the seed to get repeatable results as we do not want to get different result for differnt strategies. 
+    note where random is used and if it is a problem if it is in a different file.
+3) impliment finite_horizon_MDP 
+
+4) note that the current implimentation do not alow method to use randomness as it messes with how seed is generated.
+    To fix that, we will need to modify rating_game.py simulate to take in an additional argument senario = [None, 4, 5, None, None, ...]
+
+5) THE PRACTICAL PART.  suppose we have a senario, give it to strategy and tell us what to do.
